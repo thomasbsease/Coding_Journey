@@ -146,3 +146,69 @@ del dinner_guests[0]
 del dinner_guests[0]
 del dinner_guests[0]
 print(dinner_guests)
+
+#Organizing a list
+cars = ['bmw', 'audi', 'toyato', 'subaru']
+cars.sort()
+print(cars)
+
+cars = ['bmw', 'audi', 'toyato', 'subaru']
+cars.sort(reverse=True)
+print(cars)
+
+cars = ['bmw', 'audi', 'toyato', 'subaru']
+print(f'\nHere is the original list:')
+print(cars)
+print("\nHere is the sorted list:")
+print(sorted(cars, reverse=True))
+print(sorted(cars))
+
+#Printing in reverse order
+cars = ['bmw', 'audi', 'toyato', 'subaru']
+print(cars)
+cars.reverse()
+print(cars)
+cars.reverse()
+print(cars)
+
+#Finding the legnth of a list
+cars = ['bmw', 'audi', 'toyato', 'subaru']
+len(cars)
+
+#Exercise 3.8
+visit = ['japan', 'canada', 'mexico', 'china', 'germany']
+print(f'\nHere is my list:')
+print(visit)
+
+print(f'\nHere is my list sorted:')
+print(sorted(visit))
+
+print(f"\nAs you can see, the sorted function does edit the original list:")
+print(visit)
+
+print(f"We can also go in reverse:")
+print(sorted(visit, reverse=True))
+
+print("Still not altered the orginal list:")
+print(visit)
+
+print("Now lets use the reverse method. Look at the results:")
+visit.reverse()
+print(visit)
+
+print("\nNow let's turn it back:")
+visit.reverse()
+print(visit)
+
+print("\nCan do the same thing with sort (permanent)")
+visit.sort()
+print(visit)
+
+print("Lastly, let's sort in reverse order permanently:")
+visit.sort(reverse=True)
+print(visit)
+
+#Exercise 3.9
+print(len(dinner_guests))
+
+#Exercise 3.10 (Using all function/methods we've learned)
