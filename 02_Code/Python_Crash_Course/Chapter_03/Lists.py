@@ -212,3 +212,54 @@ print(visit)
 print(len(dinner_guests))
 
 #Exercise 3.10 (Using all function/methods we've learned)
+favorite_series = ['Wheel of Time', 'Lord of the Rings', 'Red Rising', 'First Law Triology']
+print(favorite_series[-1])
+
+print(f'My favorite series ever is the {favorite_series[0].title()}!')
+print(f'The series I am reading now is {favorite_series[2].lower()}')
+print(f'The first fantasy series I read was {favorite_series[1].title()}!')
+
+#Modifying
+favorite_series[2] = 'Mistborn'
+print(favorite_series)
+favorite_series[-1] = 'Mr. Mercedes Triology'
+print(favorite_series)
+
+favorite_series[2] = 'Red Rising'
+favorite_series[-1] = 'First Law'
+print(favorite_series)
+
+favorite_series.append('Mistborn')
+print(favorite_series)
+favorite_series.insert(0, 'Sun Eater')
+print(favorite_series)
+
+#Removing
+favorite_series.remove('Mistborn')
+print(favorite_series)
+del favorite_series[0]
+print(favorite_series)
+favorite_series.pop()
+print(favorite_series)
+favorite_series.pop(1)
+print(favorite_series)
+
+#Adding
+favorite_series.append('First Law')
+favorite_series.insert(-2, 'Red Rising')
+favorite_series.insert(1,'Lord of Rings')
+print(favorite_series)
+
+favorite_series.sort()
+print(favorite_series)
+favorite_series.sort(reverse=True)
+print(favorite_series)
+favorite_series.reverse()
+print(favorite_series)
+print(sorted(favorite_series, reverse=True))
+
+
+print(favorite_series)
+favorite_series.pop(2)
+print(favorite_series)
+print(sorted(favorite_series, reverse=True))
