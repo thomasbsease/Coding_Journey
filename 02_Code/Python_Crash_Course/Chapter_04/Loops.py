@@ -139,3 +139,90 @@ for player in players[:3]:
     print(player.title())
 
 #Copying a list
+my_foods = ['pizza', 'falefel', 'carrot cake']
+friend_foods = my_foods[:]
+
+print("My favorite foods are:")
+print(my_foods)
+
+print(f"\nMy friend's favorite foods are:")
+print(friend_foods)
+
+my_foods.append('yogurt')
+friend_foods.append('oats')
+
+print(my_foods)
+print(friend_foods)
+
+#Exercise 4.10 (Slices)
+my_foods = ['yogurt', 'oats', 'protien bars', 'sandwiches', 'eggs', 'cheese']
+print(f"The first three items in this list are:")
+print(my_foods[:3])
+
+print('Items from the middle are:')
+print(my_foods[2:5])
+
+print('The last three items are:')
+print(my_foods[-3:])
+
+#Exercise 4.11
+my_pizzas = ['sausage', 'cheese', 'pepperoni', 'mushroom', 'bacon', 'veggie']
+friends_pizzas = my_pizzas[:]
+
+my_pizzas.append('bbq')
+friends_pizzas.append('alfredo')
+
+print("My favorite pizzas are:")
+for pizza in my_pizzas:
+    print(pizza)
+
+print(f"\nMy friend's favorite pizza's are:")
+for pizza in friends_pizzas:
+    print(pizza)
+
+#4.12
+my_foods = ['yogurt', 'protein bar', 'apples', 'pineapple']
+
+print("These are my favorite foods:")
+for food in my_foods:
+    print(food)
+
+#This one is cool... Sorted and used a slice
+print('These are my top 3 foods:')
+for food in sorted(my_foods[0:3]):
+    print(food.title())
+
+#Tuples
+#Essentially lists that cannot change
+dimensions = (200, 50)
+
+#Can still index
+print(dimensions[0])
+print(dimensions[1])
+
+#Can also loop through tuples
+for dimension in dimensions:
+    print(dimension)
+
+#Writing over a truple
+dimensions = (200, 50)
+print("Original Diminensions:")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (400,100)
+print(f"\nModified Diminesions:")
+for dimension in dimensions:
+    print(dimension)
+
+#Excercise 4.13 Buffet
+buffet_foods = ('meat', 'ice cream', 'cake', 'potatoes', 'pasta')
+print("The foods at my favorite buffet are:")
+for food in buffet_foods:
+    print(food.title())
+
+buffet_foods = ('stew', 'clam chowder', 'cake', 'potatoes', 'pasta')
+print("Here is the revised menu:")
+for food in buffet_foods:
+    print(food)
+
